@@ -102,7 +102,7 @@ const PAGES_TEMPLATES = {
             <input type="number" class="font-size">
         </div>
 
-        <div class="button-container">
+        <div class="panel-button-container">
             <button class="btn-cancel">Cancel</button>
             <button class="btn-save">Save</button>
         </div>
@@ -123,11 +123,11 @@ init();
 function init() {
 	// Function initiates executing of the page navigation function
 
-  formadDate();
+  formatDate();
 	navigate(ROUTES.LIST);
 }
 
-function formadDate() {
+function formatDate() {
 //
   
 appState.templatesList.forEach((template) => {
@@ -283,7 +283,7 @@ function showPanel(evt) {
     getElement('.btn-save-template', MAIN_CONTAINER).disabled = false;
   });
 
-  editPanel.style.display = "block";
+  editPanel.style.display = "flex";
 }
 
 function saveTemplateItem(editPanel) {

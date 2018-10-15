@@ -2,7 +2,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	/*outline: 1px solid red;*/
 }
 
 html, body {
@@ -10,11 +9,29 @@ html, body {
 	height: 100%;
 }
 
+button {
+	margin: 0 2px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: .2em 1em;
+	outline: none;
+	border-width: 1px 0;
+	border-style: solid none;
+	border-color: #09F580 #000 #49B572;
+	border-radius: 6px;
+	background: linear-gradient(#09F580, #3CC24D) #3CC24D;
+	transition: 0.2s;
+}
+
+button:hover { background: linear-gradient(#3CC24D, #44BA6A) #3CC24D; }
+button:active { background: linear-gradient(#44BA6A, #3CC24D) #44BA6A; }
+
 .container-main {
 	margin: auto;
 	margin-top: 20px;
-	width: 80%;
-	height: 80%;
+	width: 50%;
+	height: 60%;
 	background: #B9ECB6;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -44,9 +61,6 @@ html, body {
 .list-title-container {
 	margin: 10px;
 	text-align: center;
-}
-
-.list-title {
 }
 
 .templates-list-wrapper {
@@ -86,7 +100,7 @@ html, body {
 }
 
 .template-title-value:hover, .editable:hover {
-	background: #3D1;
+	background: #27D778FF;
 	cursor: pointer;
 }
 
@@ -106,7 +120,7 @@ html, body {
 	border: 1px solid #007F0EFF;
 	border-radius: 5px;
 	padding: 10px;
-	height: 90%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -115,24 +129,55 @@ html, body {
 }
 
 .template-button-container {
+	margin-top: 10px;
 	display: flex;
 	flex-direction: row;
 }
 
 .edit-panel {
+	padding: 5px;
 	border: 1px solid #007F0EFF;
 	border-radius: 5px;
 	display: none;
 	background: #27D778FF;
 	width: 30%;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.input-text-container, .font-size-container {
+	width: 80%;
+}
+
+.input-text-title {
+	font-size: 16px;
 }
 
 .input-text {
 	width: 100%;
+	box-sizing: border-box;
+	resize: none;
+}
+
+.font-size-title {
+	margin-top: 3px;
+	font-size: 16px;
 }
 
 .font-size {
 	width: 100%;
+	box-sizing: border-box;
+}
+
+.panel-button-container {
+	width: 80%;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .template {
