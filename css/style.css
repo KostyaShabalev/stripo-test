@@ -1,0 +1,160 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	/*outline: 1px solid red;*/
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.container-main {
+	margin: auto;
+	margin-top: 20px;
+	width: 80%;
+	height: 80%;
+	background: #B9ECB6;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.title-main-container {
+	width: 100%;
+	background: #27D778FF;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.window-main {
+	margin: 5px;
+	border-radius: 5px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.list-title-container {
+	margin: 10px;
+	text-align: center;
+}
+
+.list-title {
+}
+
+.templates-list-wrapper {
+	margin: 10px;
+	padding: 10px;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.current-template-wrapper {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #007F0EFF;
+	border-radius: 5px;
+}
+
+.template-title-container {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.template-edition-date-container {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.template-edition-date-value {
+	font-weight: normal;
+}
+
+.template-title-value {
+	color: green;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.template-title-value:hover, .editable:hover {
+	background: #3D1;
+	cursor: pointer;
+}
+
+.view-title-container {
+	margin: 10px;
+	text-align: center;
+}
+
+.view-edit-template-wrapper {
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+	justify-content: center;
+}
+
+.view-template-wrapper {
+	border: 1px solid #007F0EFF;
+	border-radius: 5px;
+	padding: 10px;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.template-button-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.edit-panel {
+	border: 1px solid #007F0EFF;
+	border-radius: 5px;
+	display: none;
+	background: #27D778FF;
+	width: 30%;
+}
+
+.input-text {
+	width: 100%;
+}
+
+.font-size {
+	width: 100%;
+}
+
+.template {
+	text-align: center;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.editable {
+	margin: 5px 0;
+	border: 1px solid #007F0EFF;
+	border-radius: 5px;
+}
+
+
+
+
