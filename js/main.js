@@ -1,5 +1,5 @@
 
-
+// Variable which imitates server
 var server = [ 
   { 
     id: 1, 
@@ -128,7 +128,7 @@ function init() {
 }
 
 function formatDate() {
-//
+// Function transforms date format for each template
   
 appState.templatesList.forEach((template) => {
   template.modified = setDate(new Date(template.modified));
@@ -149,7 +149,7 @@ function navigate(route, idNum) {
 }
 
 function showListOfTemplates() {
-	//
+	// Function renders templates list and shows it as a mane page
 
   appState.templateBeingEditedId = null;
 
@@ -173,7 +173,7 @@ function showListOfTemplates() {
 }
 
 function addTemplateToList(item) {
-  //
+  // Function adds template container to the list
 
   return `
     <div class="current-template-wrapper">
@@ -194,7 +194,7 @@ function addTemplateToList(item) {
 
 
 function showCurrTemplate(template) {
-  //
+  //Function renders shows selected template (2-nd page)
 
   appState.templateBeingEdited = template;
 
@@ -229,7 +229,7 @@ function showCurrTemplate(template) {
 }
 
 function saveCurrentTemplate(evt) {
-  //
+  //Function saves edited template and shows main page
 
   let subsidiaryContainer = document.createElement('div');
   subsidiaryContainer.appendChild(getElement('.template', MAIN_CONTAINER));
@@ -243,7 +243,7 @@ function saveCurrentTemplate(evt) {
 }
 
 function saveTemplateToServer() {
-  //
+  //Function saves edited template and shows main pageto the server
 
   server.forEach((servElem, num) => {
     if (servElem.id === appState.templateBeingEdited.id) {
@@ -253,7 +253,7 @@ function saveTemplateToServer() {
 }
 
 function addPanel(elem) {
-  //
+  //Function adds listener (which shows edit panel) to the 'editable' elems
 
   [].forEach.call(elem.querySelectorAll('.editable'), (editableItem) => {
     editableItem.addEventListener('click', (evt) => {showPanel(evt)});
@@ -262,7 +262,7 @@ function addPanel(elem) {
 }
 
 function showPanel(evt) {
-  //
+  //Function renders edit panel
 
   appState.currentTemplateItem = evt.target;
 
@@ -310,7 +310,7 @@ function getElement(query, parentNode) {
 }
 
 function setDate(date) {
-  //
+  //Function transforms input date into a readable string
 
   return date.toDateString() + ' at ' + date.getHours() + ':' + date.getMinutes();
 }

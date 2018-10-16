@@ -152,11 +152,12 @@ button:active { background: linear-gradient(#44BA6A, #3CC24D) #44BA6A; }
 	width: 80%;
 }
 
-.input-text-title {
+.input-text-title, .font-size-title {
 	font-size: 16px;
 }
 
-.input-text {
+.input-text, .font-size {
+	padding-left: 2px;
 	width: 100%;
 	box-sizing: border-box;
 	resize: none;
@@ -164,7 +165,6 @@ button:active { background: linear-gradient(#44BA6A, #3CC24D) #44BA6A; }
 
 .font-size-title {
 	margin-top: 3px;
-	font-size: 16px;
 }
 
 .font-size {
